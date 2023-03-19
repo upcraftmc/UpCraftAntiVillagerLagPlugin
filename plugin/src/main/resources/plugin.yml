@@ -1,0 +1,13 @@
+main: de.upcraftmc.villager.UpCraftAntiVillagerLagPlugin
+
+name: UpCraftAntiVillagerLag
+version: ${version}
+author:
+  - LuciferMorningstarDev
+
+description: UpCraftAntiVillagerLag System von upcraftmc.com
+website: https://upcraftmc.com/
+
+api-version: 1.19
+
+load: POSTWORLD
