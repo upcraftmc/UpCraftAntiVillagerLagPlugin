@@ -52,7 +52,7 @@ public class VillagerRestockUtils {
         long currentDay = curTick - currDayTimeTick;
         long vilTick = VillagerUtiils.getRestockTime(vil, plugin);
         for (Iterator<Long> iterator = restockTimes.iterator(); iterator.hasNext(); ) {
-            long restockTime = ((Long)iterator.next()).longValue();
+            long restockTime = ((Long) iterator.next()).longValue();
             long todayRestock = currentDay + restockTime;
             if (curTick >= todayRestock && vilTick < todayRestock) {
                 VillagerUtiils.restock(vil);

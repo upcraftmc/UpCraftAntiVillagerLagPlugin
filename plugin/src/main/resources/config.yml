@@ -9,56 +9,56 @@ LoopEntitiesSeconds: 5
 ####################################################################
 
 NamesThatDisable:
-  - Aus
-  - Optimize
-  - Disabled
-  - Deaktiviert
-  - Inaktiv
-  - optimize
-  - disabled
-  - deaktiviert
-  - inaktiv
-  - aus
+    - Aus
+    - Optimize
+    - Disabled
+    - Deaktiviert
+    - Inaktiv
+    - optimize
+    - disabled
+    - deaktiviert
+    - inaktiv
+    - aus
 
 ####################################################################
 
 BlocksThatDisable:
-  - END_STONE_BRICKS
+    - END_STONE_BRICKS
 
 ####################################################################
 
 RestockTimes:
-  - 1000
-  - 13000
+    - 1000
+    - 13000
 
 ####################################################################
 
 WorkStationCheckRadius: 2
 WorkstationsThatDisable:
-  - COMPOSTER
-  - SMOKER
-  - BARREL
-  - LOOM
-  - BLAST_FURNACE
-  - BREWING_STAND
-  - Cauldron
-  - FLETCHING_TABLE
-  - CARTOGRAPHY_TABLE
-  - LECTERN
-  - SMITHING_TABLE
-  - STONECUTTER
-  - GRINDSTONE
-  - ANVIL
-  - CHIPPED_ANVIL
-  - DAMAGED_ANVIL
+    - COMPOSTER
+    - SMOKER
+    - BARREL
+    - LOOM
+    - BLAST_FURNACE
+    - BREWING_STAND
+    - Cauldron
+    - FLETCHING_TABLE
+    - CARTOGRAPHY_TABLE
+    - LECTERN
+    - SMITHING_TABLE
+    - STONECUTTER
+    - GRINDSTONE
+    - ANVIL
+    - CHIPPED_ANVIL
+    - DAMAGED_ANVIL
 
 ####################################################################
 
 ToggleableOptions:
-  UseNameTags: true
-  UseMetalBlocks: true
-  UseOtherBlocks: true
-  UseWorkStations: true
+    UseNameTags: true
+    UseMetalBlocks: true
+    UseOtherBlocks: true
+    UseWorkStations: true
 
 ####################################################################
 

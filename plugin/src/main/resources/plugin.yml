@@ -3,7 +3,7 @@ main: de.upcraftmc.villager.UpCraftAntiVillagerLagPlugin
 name: UpCraftAntiVillagerLag
 version: ${version}
 author:
-  - LuciferMorningstarDev
+    - LuciferMorningstarDev
 
 description: UpCraftAntiVillagerLag System von upcraftmc.com
 website: https://upcraftmc.com/

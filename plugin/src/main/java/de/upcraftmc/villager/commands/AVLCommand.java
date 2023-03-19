@@ -54,6 +54,18 @@ public class AVLCommand extends Command {
         this.subCommands.put("zombie", new ZombieCommand(plugin));
     }
 
+    static void help(CommandSender sender) {
+        sender.sendMessage(ComponentSerializer.etAndHEX.deserialize(String.join("\n", List.of(
+                "&r&7============ &aAnti&bVillager&cLag &7============",
+                "&r  &7» &6/avl &binfo &7- Zeigt dir informationen über den Villager an den du ansiehst.",
+                "&r  &7» &6/avl &aenable &7- Aktiviere den Villager den du ansiehst.",
+                "&r  &7» &6/avl &cdisable &7- Deaktiviere den Villager den du ansiehst.",
+                "&r  &7» &6/avl &2zombie &7- Aktiviert/Deaktiviert den Zombieschutz vom Villager den du ansiehst.",
+                "&r  &7» &6/avl &2ignore &7- Aktiviert/Deaktiviert UmgebungsChecks vom Villager den du ansiehst.",
+                "&r&7============ &aAnti&bVillager&cLag &7============"
+        ))));
+    }
+
     @Override
     public boolean execute(@NotNull final CommandSender sender, @NotNull final String commandLabel, final @NotNull String[] args) {
         if (!(sender instanceof Player)) {
@@ -71,18 +83,6 @@ public class AVLCommand extends Command {
         }
         help(sender);
         return false;
-    }
-
-    static void help(CommandSender sender) {
-        sender.sendMessage(ComponentSerializer.etAndHEX.deserialize(String.join("\n", List.of(
-                "&r&7============ &aAnti&bVillager&cLag &7============",
-                "&r  &7» &6/avl &binfo &7- Zeigt dir informationen über den Villager an den du ansiehst.",
-                "&r  &7» &6/avl &aenable &7- Aktiviere den Villager den du ansiehst.",
-                "&r  &7» &6/avl &cdisable &7- Deaktiviere den Villager den du ansiehst.",
-                "&r  &7» &6/avl &2zombie &7- Aktiviert/Deaktiviert den Zombieschutz vom Villager den du ansiehst.",
-                "&r  &7» &6/avl &2ignore &7- Aktiviert/Deaktiviert UmgebungsChecks vom Villager den du ansiehst.",
-                "&r&7============ &aAnti&bVillager&cLag &7============"
-        ))));
     }
 
     @Override

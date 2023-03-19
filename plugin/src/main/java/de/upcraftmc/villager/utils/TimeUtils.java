@@ -192,10 +192,18 @@ public class TimeUtils {
                 }
             }
 
-            Duration duration = Duration.ofDays(days).plusHours(hours).plusMinutes(minutes).plusSeconds(seconds).plusMillis(milliseconds).plus(Duration.of(years, ChronoUnit.YEARS)).plus(Duration.of(months, ChronoUnit.MONTHS));
+            Duration duration = Duration
+                    .ofDays(days)
+                    .plusHours(hours)
+                    .plusMinutes(minutes)
+                    .plusSeconds(seconds)
+                    .plusMillis(milliseconds)
+                    .plus(Duration.of(years, ChronoUnit.YEARS))
+                    .plus(Duration.of(months, ChronoUnit.MONTHS));
 
             return duration;
         }
+
     }
 
 }

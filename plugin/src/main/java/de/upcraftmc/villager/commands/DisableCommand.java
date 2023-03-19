@@ -52,7 +52,7 @@ public class DisableCommand implements AVLSubCommand {
 
         Villager v = (Villager) target;
 
-        if(VillagerUtiils.shouldBeDisabled(v, plugin)) {
+        if (VillagerUtiils.shouldBeDisabled(v, plugin)) {
             sender.sendMessage(ComponentSerializer.etAndHEX.deserialize("&cDer Villager ist bereits deaktiviert"));
             return false;
         }

@@ -176,7 +176,9 @@ public class VillagerUtiils {
     }
 
     public static void performVillagerCheck(Villager v, UpCraftAntiVillagerLagPlugin plugin) {
-        if(ignore(v, plugin)) return;
+        if (ignore(v, plugin)) {
+            return;
+        }
 
         Location villagerLocation = v.getLocation();
         Block standsOn = villagerLocation.getBlock();

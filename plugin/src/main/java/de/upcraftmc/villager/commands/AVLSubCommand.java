@@ -30,5 +30,7 @@ import java.util.List;
  * @since 19.03.2023
  */
 public interface AVLSubCommand {
+
     boolean run(Player sender, List subArgs);
+
 }

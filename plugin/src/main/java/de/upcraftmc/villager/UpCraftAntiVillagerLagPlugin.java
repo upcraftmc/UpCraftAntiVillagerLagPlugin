@@ -35,12 +35,13 @@ import org.bukkit.plugin.java.JavaPlugin;
  * @since 16.03.2023
  */
 public class UpCraftAntiVillagerLagPlugin extends JavaPlugin {
+
     @Getter
     private static UpCraftAntiVillagerLagPlugin instance;
 
     @Override
     public void onLoad() {
-        if(instance != null) {
+        if (instance != null) {
             throw new RuntimeException("UpCraftAntiVillagerLagPlugin can only been initialized once.");
         }
         instance = this;
