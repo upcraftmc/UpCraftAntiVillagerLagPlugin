@@ -260,8 +260,9 @@ public class VillagerUtiils {
             public void run() {
                 Bukkit.getWorlds().forEach(current -> {
                     new Thread(() -> {
-                        current.getLivingEntities().stream().filter(e -> (e instanceof Villager)).forEach(v -> {
-                            Bukkit.getScheduler().runTask(plugin, () -> {
+                        Bukkit.getScheduler().runTask(plugin, () -> {
+
+                            current.getLivingEntities().stream().filter(e -> (e instanceof Villager)).forEach(v -> {
                                 try {
                                     if (!(v instanceof Villager)) {
                                         return;
@@ -270,6 +271,7 @@ public class VillagerUtiils {
                                 } catch (Exception e) {
                                 }
                             });
+
                         });
                     }, "disable-villagers-" + current.getName()).start();
                 });
